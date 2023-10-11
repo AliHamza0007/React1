@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import Layout from '../commponents/Layout';
-var timer = undefined;
-function Timer() {
+const Counter=()=> {
+
+    
+    var timer = undefined;
     const [counter, setcounter] = useState(0)
     const [started, setstarted] = useState(false)
     
@@ -35,4 +37,4 @@ function Timer() {
     )
 }
 
-export default Timer
+export default Counter
