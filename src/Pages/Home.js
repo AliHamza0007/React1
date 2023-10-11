@@ -1,7 +1,7 @@
 import Typewriter from "typewriter-effect";
 import { Fade } from "react-reveal";
 import Layout from "../commponents/Layout";
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 import { toast } from "react-toastify";
 const Home = () => {
   const Banner =
@@ -14,12 +14,13 @@ const Home = () => {
     width: "100%",
     height: "100%",
   };
+  const[show,setShow]=useState(null);
   useEffect(() => {
   setTimeout(() => {
         toast.success("Welcome ");
   }, 3000);
   // eslint-disable-next-line
-  }, []);
+  }, [show]);
 
   return (
     <Layout>
